@@ -1,0 +1,30 @@
+[{
+        "title": "Hang Out",
+        "budget": 20
+    },
+    {
+        "title": "Subscriptions",
+        "budget": 200
+    },
+
+    {
+        "title": "Amazon",
+        "budget": 95
+    },
+    {
+        "title": "Food",
+        "budget": 125
+    },
+    {
+        "title": "Dates",
+        "budget": 236
+    },
+    {
+        "title": "Decorations",
+        "budget": 70
+    },
+    {
+        "title": "Rent",
+        "budget": 15
+    }
+]

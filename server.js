@@ -7,7 +7,7 @@ app.use("/", express.static("public"));
 const budget = {
     myBudget: [{
             title: "Hang Out",
-            budget: 20
+            budget: 2000
         },
 
         {
@@ -24,13 +24,15 @@ const budget = {
     ]
 };
 
+var jsonfile = require("/Users/Titus/Documents/dev/week03/personal-budget/budget.json");
+
 app.get('/hello', (req, res) => {
     res.send('Hello Wold!');
 
 });
 
 app.get("/budget", (req, res) => {
-    res.json(budget);
+    res.json(jsonfile);
 });
 
 app.listen(port, () => {
