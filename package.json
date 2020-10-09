@@ -8,9 +8,6 @@
         "start": "node server.js",
         "titus": "node server.js"
     },
-
-
-
     "repository": {
         "type": "git",
         "url": "git+https://github.com/tdolphus/personal-budget.git"
@@ -23,6 +20,7 @@
     },
     "homepage": "https://github.com/tdolphus/personal-budget#readme",
     "dependencies": {
+        "cors": "^2.8.5",
         "express": "^4.17.1"
     }
 }

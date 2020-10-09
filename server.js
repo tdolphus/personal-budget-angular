@@ -1,8 +1,11 @@
+//Budget API
+
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const port = 3000;
 
-app.use("/", express.static("public"));
+app.use(cors());
 
 const budget = {
     myBudget: [{
@@ -26,15 +29,12 @@ const budget = {
 
 var jsonfile = require("/Users/Titus/Documents/dev/week03/personal-budget/budget.json");
 
-app.get('/hello', (req, res) => {
-    res.send('Hello Wold!');
 
-});
 
 app.get("/budget", (req, res) => {
     res.json(jsonfile);
 });
 
 app.listen(port, () => {
-    console.log("Example app listening at http://localhost:3000")
+    console.log("API Served at http://localhost:" + port)
 })
